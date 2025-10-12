@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Download, Upload } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -34,30 +35,24 @@ const Resume = ({ isAdmin }: ResumeProps) => {
           <p className="text-foreground/80 text-lg mb-6">
             Download my resume to learn more about my experience and qualifications.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Button 
-              asChild
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon-strong"
-              size="lg"
-            >
-              <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
-                <Download className="w-5 h-5 mr-2" />
+          <div className="flex gap-3 justify-center flex-wrap">
+            <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+              <Badge className="bg-primary/20 text-primary border-primary hover:bg-primary/30 hover:shadow-neon-strong transition-all duration-300 text-base py-3 px-5 flex items-center gap-2 cursor-pointer">
+                <Download className="w-5 h-5" />
                 Download Resume
-              </a>
-            </Button>
+              </Badge>
+            </a>
             {isAdmin && (
-              <Button 
+              <Badge 
                 onClick={() => {
                   setNewUrl(resumeUrl);
                   setIsDialogOpen(true);
                 }}
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary/10"
-                size="lg"
+                className="bg-primary/20 text-primary border-primary hover:bg-primary/30 hover:shadow-neon-strong transition-all duration-300 text-base py-3 px-5 flex items-center gap-2 cursor-pointer"
               >
-                <Upload className="w-5 h-5 mr-2" />
+                <Upload className="w-5 h-5" />
                 Update Link
-              </Button>
+              </Badge>
             )}
           </div>
         </div>

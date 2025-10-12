@@ -1,5 +1,5 @@
 import { Mail, Linkedin, Github, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const contactInfo = [
   {
@@ -35,26 +35,22 @@ const Contact = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 animate-border-glow inline-block border-b-2 border-primary pb-2">
           Contact
         </h2>
-        <div className="grid md:grid-cols-2 gap-6 animate-fade-in">
+        <div className="flex flex-wrap gap-3 animate-fade-in">
           {contactInfo.map((info) => {
             const Icon = info.icon;
             return (
-              <Button
+              <a 
                 key={info.label}
-                asChild
-                variant="outline"
-                className="h-auto p-6 border-primary/30 hover:border-primary hover:shadow-neon-strong transition-all duration-300 group"
+                href={info.href} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group"
               >
-                <a href={info.href} target="_blank" rel="noopener noreferrer">
-                  <div className="flex items-center gap-4 w-full">
-                    <Icon className="w-8 h-8 text-primary group-hover:animate-glow-pulse" />
-                    <div className="text-left">
-                      <div className="text-sm text-muted-foreground">{info.label}</div>
-                      <div className="text-foreground font-medium break-all">{info.value}</div>
-                    </div>
-                  </div>
-                </a>
-              </Button>
+                <Badge className="bg-primary/20 text-primary border-primary hover:bg-primary/30 hover:shadow-neon-strong transition-all duration-300 text-base py-3 px-5 flex items-center gap-2">
+                  <Icon className="w-5 h-5" />
+                  {info.label}
+                </Badge>
+              </a>
             );
           })}
         </div>
