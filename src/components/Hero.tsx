@@ -60,7 +60,7 @@ const Hero = ({ isAdmin }: HeroProps) => {
           </div>
           
           <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-5xl md:text-7xl font-bold text-primary animate-border-glow">
+            <h1 className="text-5xl md:text-7xl font-bold text-primary animate-border-glow whitespace-nowrap">
               E Ashok Kumar
             </h1>
             <h2 className="text-2xl md:text-3xl text-foreground/90">
