@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Upload } from "lucide-react";
 import { toast } from "sonner";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/profile-new.jpg";
 
 interface HeroProps {
   isAdmin: boolean;
