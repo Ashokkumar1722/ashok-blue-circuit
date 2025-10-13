@@ -69,7 +69,7 @@ const Hero = ({ isAdmin }: HeroProps) => {
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
               I build the gap between code and circuits — creating intelligent embedded systems and Python-powered solutions.
             </p>
-            <div className="flex gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button 
                 asChild
                 className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon"
@@ -82,6 +82,14 @@ const Hero = ({ isAdmin }: HeroProps) => {
                 className="border-primary text-primary hover:bg-primary/10 shadow-neon"
               >
                 <a href="#projects">View Projects</a>
+              </Button>
+              <Button 
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon"
+              >
+                <a href="https://ashok-blue-circuit.lovable.app/" target="_blank" rel="noopener noreferrer">
+                  Open My Website
+                </a>
               </Button>
             </div>
           </div>
