@@ -24,19 +24,19 @@ const Projects = ({ isAdmin }: ProjectsProps) => {
       id: 1,
       title: "Patient Consistent Health Monitoring system using STM32",
       description: "Real-time health monitoring system with STM32 microcontroller for continuous patient data tracking and analysis.",
-      githubUrl: "#"
+      githubUrl: "https://github.com/Ashokkumar1722"
     },
     {
       id: 2,
       title: "Web-Based Face Recognition Attendance System",
       description: "Automated attendance system using facial recognition technology for efficient and contactless tracking.",
-      githubUrl: "#"
+      githubUrl: "https://github.com/Ashokkumar1722"
     },
     {
       id: 3,
       title: "GoTogether – Carpooling Web Platform",
       description: "Web platform connecting drivers and passengers for sustainable and cost-effective commuting.",
-      githubUrl: "#"
+      githubUrl: "https://github.com/Ashokkumar1722"
     }
   ]);
 
