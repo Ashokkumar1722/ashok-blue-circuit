@@ -60,11 +60,6 @@ const Navigation = ({
             {navItems.map(item => <a key={item.href} href={item.href} onClick={e => handleNavClick(e, item.href)} className="text-foreground/80 hover:text-primary transition-colors duration-300">
                 {item.label}
               </a>)}
-            <Button size="sm" asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <a href="https://ashok-blue-circuit.lovable.app/" target="_blank" rel="noopener noreferrer">
-                Live Site
-              </a>
-            </Button>
             <Button size="sm" onClick={isAdmin ? onLogout : onAdminClick} className={isAdmin ? "bg-destructive hover:bg-destructive/90" : "bg-primary hover:bg-primary/90"}>
               <Shield className="w-4 h-4 mr-2" />
               {isAdmin ? "Logout" : "Admin"}
@@ -82,11 +77,6 @@ const Navigation = ({
             {navItems.map(item => <a key={item.href} href={item.href} onClick={e => handleNavClick(e, item.href)} className="block py-2 text-foreground/80 hover:text-primary transition-colors duration-300">
                 {item.label}
               </a>)}
-            <Button size="sm" asChild variant="outline" className="w-full mt-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <a href="https://ashok-blue-circuit.lovable.app/" target="_blank" rel="noopener noreferrer">
-                Live Site
-              </a>
-            </Button>
             <Button size="sm" onClick={isAdmin ? onLogout : onAdminClick} className={`w-full mt-4 ${isAdmin ? "bg-destructive hover:bg-destructive/90" : "bg-primary hover:bg-primary/90"}`}>
               <Shield className="w-4 h-4 mr-2" />
               {isAdmin ? "Logout" : "Admin"}
