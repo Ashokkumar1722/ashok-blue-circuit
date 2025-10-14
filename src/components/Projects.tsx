@@ -80,20 +80,18 @@ const Projects = ({ isAdmin }: ProjectsProps) => {
   return (
     <section id="projects" className="py-20 px-4 bg-secondary/20">
       <div className="container max-w-6xl">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary animate-border-glow inline-block border-b-2 border-primary pb-2">
-            Projects
-          </h2>
-          {isAdmin && (
-            <Button 
-              onClick={handleAddProject}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon"
-            >
-              <Plus className="w-4 h-4 mr-2" />
-              Add Project
-            </Button>
-          )}
-        </div>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 animate-border-glow inline-block border-b-2 border-primary pb-2">
+          Projects
+        </h2>
+        {isAdmin && (
+          <Button 
+            onClick={handleAddProject}
+            className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon mb-8"
+          >
+            <Plus className="w-4 h-4 mr-2" />
+            Add Project
+          </Button>
+        )}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
           {projects.map((project) => (

@@ -39,20 +39,18 @@ const Tools = ({ isAdmin }: ToolsProps) => {
     <>
       <section id="tools" className="py-20 px-4 bg-secondary/20">
         <div className="container max-w-4xl">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary animate-border-glow inline-block border-b-2 border-primary pb-2">
-              Tools Used
-            </h2>
-            {isAdmin && (
-              <Button
-                onClick={handleAddTool}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon"
-              >
-                <Plus className="w-4 h-4 mr-2" />
-                Add Tool
-              </Button>
-            )}
-          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 animate-border-glow inline-block border-b-2 border-primary pb-2">
+            Tools Used
+          </h2>
+          {isAdmin && (
+            <Button
+              onClick={handleAddTool}
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-neon mb-8"
+            >
+              <Plus className="w-4 h-4 mr-2" />
+              Add Tool
+            </Button>
+          )}
           <div className="flex flex-wrap gap-3 animate-fade-in">
             {tools.map((tool) => (
               <Badge 

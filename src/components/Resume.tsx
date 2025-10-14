@@ -27,7 +27,7 @@ const Resume = ({ isAdmin }: ResumeProps) => {
 
   return (
     <section id="resume" className="py-20 px-4">
-      <div className="container max-w-4xl text-center">
+      <div className="container max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 animate-border-glow inline-block border-b-2 border-primary pb-2">
           Resume
         </h2>
@@ -35,7 +35,7 @@ const Resume = ({ isAdmin }: ResumeProps) => {
           <p className="text-foreground/80 text-lg mb-6">
             Download my resume to learn more about my experience and qualifications.
           </p>
-          <div className="flex gap-3 justify-center flex-wrap">
+          <div className="flex gap-3 flex-wrap">
             <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
               <Badge className="bg-primary/20 text-primary border-primary hover:bg-primary/30 hover:shadow-neon-strong transition-all duration-300 text-base py-3 px-5 flex items-center gap-2 cursor-pointer">
                 <Download className="w-5 h-5" />
