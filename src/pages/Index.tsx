@@ -35,7 +35,7 @@ const Index = () => {
       <About />
       <Projects isAdmin={isAdmin} />
       <Skills isAdmin={isAdmin} />
-      <Tools />
+      <Tools isAdmin={isAdmin} />
       <Resume isAdmin={isAdmin} />
       <Contact />
       <Footer />
