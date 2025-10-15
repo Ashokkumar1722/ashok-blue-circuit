@@ -6,7 +6,7 @@ const About = () => {
           About Me
         </h2>
         <div className="space-y-6 animate-fade-in">
-          <div className="bg-card p-6 rounded-lg border border-primary/30 shadow-neon">
+          <div className="bg-card p-6 rounded-lg border border-primary/30 shadow-neon animate-border-flow">
             <h3 className="text-2xl font-semibold text-primary mb-4">Education</h3>
             <p className="text-foreground/90 text-lg">
               <span className="font-bold">B.Tech in Electronics and Communication Engineering</span>
@@ -17,7 +17,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="bg-card p-6 rounded-lg border border-primary/30 shadow-neon">
+          <div className="bg-card p-6 rounded-lg border border-primary/30 shadow-neon animate-border-flow">
             <h3 className="text-2xl font-semibold text-primary mb-4">Who I Am</h3>
             <p className="text-foreground/90 text-lg leading-relaxed">
               Enthusiastic ECE engineer skilled in Python, IoT, and embedded system design. 

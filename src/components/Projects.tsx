@@ -95,7 +95,7 @@ const Projects = ({ isAdmin }: ProjectsProps) => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
           {projects.map((project) => (
-            <Card key={project.id} className="bg-card border-primary/30 shadow-neon hover:shadow-neon-strong transition-all duration-300 p-6 relative group">
+            <Card key={project.id} className="bg-card border-primary/30 shadow-neon hover:shadow-neon-strong transition-all duration-300 p-6 relative group animate-border-flow">
               <h3 className="text-xl font-semibold text-primary mb-3">{project.title}</h3>
               <p className="text-foreground/80 mb-4 min-h-[100px]">{project.description}</p>
               <Button 

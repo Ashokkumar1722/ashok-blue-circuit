@@ -106,6 +106,14 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "border-flow": {
+          "0%, 100%": {
+            borderColor: "hsl(180 100% 50% / 0.3)",
+          },
+          "50%": {
+            borderColor: "hsl(180 100% 50% / 0.8)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -113,6 +121,7 @@ export default {
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "border-glow": "border-glow 2s ease-in-out infinite",
         "fade-in": "fade-in 0.6s ease-out",
+        "border-flow": "border-flow 3s ease-in-out infinite",
       },
       boxShadow: {
         "neon": "0 0 10px hsl(180 100% 50% / 0.5), 0 0 20px hsl(180 100% 50% / 0.3)",
